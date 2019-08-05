@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--My CSS, Google Fonts, and favicon-->
+
+    <title>Check the Postal Code</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="display-1 text-center">Check the Postal Code</h1>
+    </header>
+
+    <main>
+        <!--description of page-->
+        <div class="container">
+            <!--form and what the action should be, but test environments don't work-->
+            <!--<form name="postalCodeChecker" action="#" method="POST">-->
+            <form name="postalCodeChecker" action="#" method="GET" id="inputForm">
+                <!--This is the select for the number of nights-->
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="postalCode">Enter Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" name="postalCode" required placeholder="ex: A1A-1A1">
+                    </div>
+                </div>
+                <br />
+                <button type="button" class="btn btn-primary" id="confirm">Confirm Postal Code</button>
+                <p id="isAPostalCode"></p>
+            </form>
+        </div>
+    </main>
+
+    <!--footer-->
+    <hr>
+    <footer class="text-right">
+        <p>Thanks RegExLib.com.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--My JavaScript-->
+    <script src="scripts/validate.js"></script>
+</body>
+
+</html>
