@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="styles/events.css">
+
     <title>Working with events</title>
 </head>
 
@@ -38,8 +40,8 @@
                         <label for="cityInput">City</label>
                         <input type="text" class="form-control" id="cityInput" required>
                     </div>
-                </div>  
-                <div class="form-row">  
+                </div>
+                <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="stateInput">State</label>
                         <input type="text" id="stateInput" class="form-control" required>
@@ -50,6 +52,46 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-success">Submit</button>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="sSameAsB">Bill to:</label>
+                        <select class="form-control" id="sSameAsB">
+                            <option value="Same Address">Bill to the same address</option>
+                            <option value="Different Address">Bill to a different address</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="billing">
+                    <h2>Billing</h2>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="billingNameInput">Name</label>
+                            <input type="text" class="form-control" id="billingNameInput" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="billingAddressInput">Address</label>
+                            <input type="text" class="form-control" id="billingAddressInput" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="billingCityInput">City</label>
+                            <input type="text" class="form-control" id="billingCityInput" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="billingStateInput">State</label>
+                            <input type="text" id="billingStateInput" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="billingZipcodeInput">Zip</label>
+                            <input type="text" class="form-control" id="billingZipcodeInput" required>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
 
@@ -67,6 +109,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!--My JavaScript-->
+    <script src="scripts/events.js"></script>
 </body>
 
 </html>
