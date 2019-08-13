@@ -1,3 +1,6 @@
 #billing {
     display: none;
 }
+#warningMsgs {
+    color: red;
+}

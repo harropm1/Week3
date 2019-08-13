@@ -51,7 +51,6 @@
                         <input type="text" class="form-control" id="zipcodeInput" required>
                     </div>
                 </div>
-                <button type="button" class="btn btn-success">Submit</button>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="sSameAsB">Bill to:</label>
@@ -61,6 +60,36 @@
                         </select>
                     </div>
                 </div>
+                <h2>Payment</h2>
+                <div id="payment">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="creditCardNumber">Credit Card Number</label>
+                            <input type="text" class="form-control" id="creditCardNumber" pattern="[0-9]{13,16}" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="expMonth">Expiration Month</label>
+                            <input type="number" class="form-control" id="expMonth" placeholder="MM" min="1" max="12"
+                                required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="expYear">Expiration Year</label>
+                            <input type="number" class="form-control" id="expYear" placeholder="YYYY" min="2019"
+                                max="2029" required>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="securityCode">Security Code</label>
+                            <input type="text" id="securityCode" class="form-control" placeholder="###" pattern="[0-9]{3,4}" required>
+                        </div>
+                    </div>
+                </div>
+                <div id="warningMsgs"></div>
+
+                <button type="button" class="btn btn-success" id="submitBtn">Submit</button>
+                <button type="reset" class="btn btn-danger" id="resetBtn">Reset</button>
+                <!--this is the billing div-->
                 <div id="billing">
                     <h2>Billing</h2>
                     <div class="form-row">
